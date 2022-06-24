@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* Estilos de index.html */
+body{
+    padding:0;
+    margin:0;
+    font-family: 'Roboto',sans-serif;
+  }
+.center{
+    text-align: center;
+}
+
+h1{
+    color: white;
+    font-size: 2.5rem;
+    margin:0;
+    padding:0;
+  }
+
+h2{
+    margin: 0;
+}
+
+p{
+margin-right: 60px;
+}
+
+header{
+    display:flex;
+    justify-content: center;
+    background-color: #2e86de;
+    font-family: 'Roboto',sans-serif;
+    padding: .75rem 0;
+}
+/* Flex-Container */
+.container{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+}
+
+/* Estilização do Menu */
+#menu{
+    display:flex;
+    justify-content: center;
+    padding-left: 0;
+}
+
+#menu li{
+    display:inline;
+    flex-direction: row;
+    font-size: 24px;
+    padding: 15px;
+    text-decoration: none;
+
+}
+
+#menu li a{
+    /* Para tirar o aspecto de link dos dois, tem que colocar no a também */
+    text-decoration: none;
+    color: black;
+}
+
+#menu li a:hover{
+    color: grey;
+}
+
+/* ------------------------------------- */
+
+/* Estilização da foto */
+.p-60{
+    padding-left: 60px;
+    text-align: justify;
+}
+
+.br-50{
+    border-radius: 50%;
+    height:400px;
+}
+
+.wh-400{
+    width: 400px;
+    height: 400px;
+}
+
+/* ------------------------------------- */
+
+/* Estilização link YouTube */
+.container-YT{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-Social{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+}
+
+.footer_sizing{
+    width: 50px;
+    height: 50px;
+    padding: 30px;
+}
+
+/* Margem inferior */
+.mb-50{
+    margin-bottom: 50px;
+}
+
+/* Margem Esquerda */
+.ml-50{
+    margin-left: 50px;
+}
+
+/* Estilos de contato.html */
+.container-Contato{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
