@@ -24,26 +24,28 @@
         <div>
             <form>
                 <label for="nome">Nome:</label><br>
-                <input type="text" id="nome">
-                <br>
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id="TextoNome"></div>
                 <br>
         
                 <!-- Valida se tem @ e . na entrada -->
                 <label for="email">E-mail:</label><br>
-                <input type="email" id="email">
-                <br>
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id="TextoEmail"></div>
                 <br>
         
                 <label for="assunto">Assunto:</label><br>
-                <input type="text" id="assunto">
+                <input type="text" id="assunto" onkeyup="validaAssunto()">
+                <div id="TextoAssunto"></div>
                 <br>
                 <br>
         
                 <label for="coment">Comentário:</label><br>
-                <textarea name = "coment" id="coment" cols = "50" rows="5"></textarea>
+                <textarea name = "coment" id="coment" cols = "50" rows="5" onkeyup="validaComentario()"></textarea>
+                <div id="TextoComentario"></div>
                 <br>
                 <br>
-                <button>Enviar</button>
+                <button onclick="enviar() ">Enviar</button>
             </form>
         </div>
 
@@ -58,7 +60,10 @@
             style="border:0;" 
             allowfullscreen="" 
             loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
+            referrerpolicy="no-referrer-when-downgrade" 
+            onmousemove="mapaZoom()"
+            onmouseout="mapaNormal()"
+            id="mapa">
             </iframe>
         </div>
     </div>
@@ -93,5 +98,7 @@
         </p>
     </footer>
    
+    <script src="assets/js/script.js"></script>
+
 </body>
 </html>
